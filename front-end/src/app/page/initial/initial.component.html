@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="conteudo">
+    <p>Insira o link, ou escreva o que deseja ter como QRCode</p>
+    <input type="text" [(ngModel)]="content" placeholder="Digite o conteúdo" />
+    <div class="botoes">
+      <button class="limpar-btn" (click)="limpar()">Limpar</button>
+      <button class="gerar-btn" (click)="generateQR()"> Gerar QR Code </button>
+    </div>
+
+    <div class="qrcode-gerado">
+      <div *ngIf="qrImageUrl" style="margin-top: 20px">
+        <img [src]="qrImageUrl" alt="QR Code Gerado" />
+        <br />
+      </div>
+    </div>
+  </div>
+</div>

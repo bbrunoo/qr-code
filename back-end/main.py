@@ -18,7 +18,7 @@ app.add_middleware(
 QR_DIR = "qr_codes"
 os.makedirs(QR_DIR, exist_ok=True)
 
-@app.post("/generate_qr")
+@app.post("/gerar_qrcode")
 async def generate_qr(content: str = Form(...)):
     filename = f"{uuid.uuid4()}.png"
     filepath = os.path.join(QR_DIR, filename)
@@ -28,7 +28,7 @@ async def generate_qr(content: str = Form(...)):
     
     return {"filename": filename}
 
-@app.get("/get_qr/{filename}")
+@app.get("/obter_qrcode/{filename}")
 async def get_qr(filename: str):
     filepath = os.path.join(QR_DIR,filename)
     if os.path.exists(filepath):
