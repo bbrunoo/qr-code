@@ -19,7 +19,7 @@ pip install -r requirements.txt
 Inicie o servidor:
 uvicorn main:app --reload --host 0.0.0.0 --port 5000
 
-Para o front-end, entre na pasta `front-end/qrcode`.
+Para o front-end, entre na pasta `front-end`.
 
 Instale as dependências:
 npm install
