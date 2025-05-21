@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #3b3b3b;
+  background: linear-gradient(-180deg, rgba(59, 59, 59, 1) 0%, rgba(20, 20, 20, 1) 100%);
+}
+
+.conteudo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  width: 35em;
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid #505050;
+  margin: 20px;
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 30em;
+}
+
+.gerar-btn {
+  font-size: 20px;
+  padding: 10px;
+  width: 10em;
+  height: 2em;
+  border-radius: 10px;
+  background-color: rgb(29, 127, 255);
+  color: white;
+}
+
+.limpar-btn {
+  font-size: 20px;
+  padding: 10px;
+  width: 10em;
+  height: 2em;
+  border-radius: 10px;
+  background-color: rgb(199, 34, 42);
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.qrcode-gerado {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 35em;
+  width: 35em;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
